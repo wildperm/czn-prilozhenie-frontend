@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Личность",
+  "name": "IISCZN_PrilozhenieЛичностьE",
+  "className": "ЛичностьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-z-n-prilozhenie-личность",
+      "modelProjection": "ЛичностьE"
+    }
+  ]
+}

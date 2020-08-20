@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISCZN_PrilozhenieОсобенностиЛичности",
+  "modelName": "i-i-s-c-z-n-prilozhenie-особенности-личности",
+  "className": "ОсобенностиЛичности",
+  "nameSpace": "IIS.CZN_Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "особенностиЛица",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "особенностиФигуры",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "особенностиХарактера",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "личность",
+      "relatedTo": "i-i-s-c-z-n-prilozhenie-личность",
+      "inverse": "особенностиЛичности"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОсобенностиЛичностиE",
+      "modelName": "i-i-s-c-z-n-prilozhenie-особенности-личности",
+      "attrs": [
+        {
+          "name": "особенностиЛица",
+          "caption": "Особенности лица",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "особенностиФигуры",
+          "caption": "Особенности фигуры",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "особенностиХарактера",
+          "caption": "Особенности характера",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

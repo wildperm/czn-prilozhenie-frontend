@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-c-z-n-prilozhenie-карточка-гражданина-e",
+  "editForm": "i-i-s-c-z-n-prilozhenie-карточка-гражданина-e",
+  "external": false,
+  "caption": "Карточка гражданина",
+  "name": "IISCZN_PrilozhenieКарточкаГражданинаL",
+  "className": "КарточкаГражданинаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-z-n-prilozhenie-карточка-гражданина",
+      "modelProjection": "КарточкаГражданинаL"
+    }
+  ]
+}

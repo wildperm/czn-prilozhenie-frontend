@@ -1,0 +1,89 @@
+﻿{
+  "name": "IISCZN_PrilozhenieЛичность",
+  "modelName": "i-i-s-c-z-n-prilozhenie-личность",
+  "className": "Личность",
+  "nameSpace": "IIS.CZN_Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "возраст",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "особенностиЛичности",
+      "relatedTo": "i-i-s-c-z-n-prilozhenie-особенности-личности",
+      "inverse": "личность"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЛичностьE",
+      "modelName": "i-i-s-c-z-n-prilozhenie-личность",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "возраст",
+          "caption": "Возраст",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ОсобенностиЛичностиE",
+          "caption": "Особенности личности",
+          "name": "особенностиЛичности",
+          "relatedTo": "i-i-s-c-z-n-prilozhenie-особенности-личности",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЛичностьL",
+      "modelName": "i-i-s-c-z-n-prilozhenie-личность",
+      "attrs": [
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "возраст",
+          "caption": "Возраст",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

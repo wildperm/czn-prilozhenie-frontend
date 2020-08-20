@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-c-z-n-prilozhenie-личность-e",
+  "editForm": "i-i-s-c-z-n-prilozhenie-личность-e",
+  "external": false,
+  "caption": "Личность",
+  "name": "IISCZN_PrilozhenieЛичностьL",
+  "className": "ЛичностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-z-n-prilozhenie-личность",
+      "modelProjection": "ЛичностьL"
+    }
+  ]
+}

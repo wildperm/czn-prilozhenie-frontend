@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "C z n_ prilozhenie",
+  "applicationTitle": "C z n_ prilozhenie",
+  "items": [
+    {
+      "link": null,
+      "menuName": "c-z-n-prilozhenie",
+      "caption": "CZN_Prilozhenie",
+      "title": "CZN_Prilozhenie",
+      "children": [
+        {
+          "link": "i-i-s-c-z-n-prilozhenie-личность-l",
+          "menuName": null,
+          "caption": "Личность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-c-z-n-prilozhenie-карточка-гражданина-l",
+          "menuName": null,
+          "caption": "Карточка гражданина",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

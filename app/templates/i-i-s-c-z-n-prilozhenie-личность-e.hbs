@@ -1,0 +1,61 @@
+<h3 class="ui header">{{t "forms.i-i-s-c-z-n-prilozhenie-личность-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИО
+      class=(if (v-get validationObject "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-c-z-n-prilozhenie-личность-e.фИО-caption")
+      data-test-i-i-s-c-z-n-prilozhenie-личность-e----=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "фИО" "messages")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.возраст
+      class=(if (v-get validationObject "возраст" "isInvalid") "error")
+      label=(t "forms.i-i-s-c-z-n-prilozhenie-личность-e.возраст-caption")
+      data-test-i-i-s-c-z-n-prilozhenie-личность-e--------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "возраст" "messages")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-c-z-n-prilozhenie-личность-e.особенностиЛичности-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="особенностиЛичностиGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.особенностиЛичности
+      content=model.особенностиЛичности
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationObject "особенностиЛичности" "isInvalid") "error")
+      data-test-i-i-s-c-z-n-prilozhenie-личность-e--------------------=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "особенностиЛичности" "messages")}}
+  </div>
+</form>
